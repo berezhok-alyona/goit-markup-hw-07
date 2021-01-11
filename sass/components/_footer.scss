@@ -1,0 +1,24 @@
+.footer {
+  background: $dark-background-color;
+  height: 252px;
+  min-width: 100%;  
+  }
+  
+  .footer-content {
+  display: flex;  
+  }
+  
+  .footer-contacts {
+  display: block; 
+  padding-top: 20px;
+}
+
+  .footer .address {
+  @include footerContacts($white-color); 
+}
+
+.footer-email,
+.footer-telephone {
+  @include footerContacts($light-grey-color);
+  margin-top: 9px;
+}

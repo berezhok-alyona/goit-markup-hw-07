@@ -1,0 +1,35 @@
+.main-nav {
+display: flex;
+align-items: center;
+}
+  
+.main-nav .item {
+margin-right: 50px;
+
+&:first-child {
+margin-left: 93px;
+}
+  
+&:last-child {
+margin-right: 0px;
+}
+}
+  
+.main-nav .nav-link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+color: $primary-text-color;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+cursor: pointer;  
+
+&:hover,
+&:focus,
+&:active {
+color: $accent-color;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+

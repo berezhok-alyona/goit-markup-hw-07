@@ -1,0 +1,14 @@
+.page-header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    width: 100%;
+    border-bottom: 1px solid $header-border-color;
+    background-color: $white-color;
+  }
+
+  .header-container {
+    @extend %align-centeredFlex;
+  }

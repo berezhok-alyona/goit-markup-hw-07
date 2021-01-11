@@ -1,0 +1,61 @@
+.features-list {
+  @include flex(space-between);
+    margin-top: 94px;
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+    max-width: 266px;
+    max-height: 101px;
+  }  
+
+  & .item::before {
+    display: block;
+    background-color: $light-background-color;
+    content: '';
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  & .item:nth-child(1)::before {
+    background-image: url(../icons/antenna.svg);
+  
+  }
+  
+  & .item:nth-child(2)::before {
+    background-image: url(../icons/clock.svg);
+  }
+
+  & .item:nth-child(3)::before {
+    background-image: url(../icons/notebook.svg);
+  }
+  
+  & .item:nth-child(4)::before {
+    background-image: url(../icons/astronaut-1.svg);
+  }
+
+  & h3 {
+  @include secondaryTitle($primary-text-color);
+  margin-bottom: 10px;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  }
+   
+  .features h2 {
+    @extend %hidden;
+  }
+  
+  
+  
+  
